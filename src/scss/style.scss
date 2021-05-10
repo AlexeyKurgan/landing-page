@@ -1,0 +1,21 @@
+/*----- libs in project -----*/
+@import "libs/bootstrap-reboot";
+/*-----/ libs in project /-----*/
+
+/*----- base styles in project -----*/
+@import "base/variables";
+@import "base/base-styles";
+/*-----/ base styles in project /-----*/
+
+/*----- components styles in project -----*/
+@import "components/header";
+@import "components/navigation";
+@import "components/about";
+@import "components/customers-review";
+@import "components/slider";
+@import "components/why-plae";
+@import "components/find-us";
+@import "components/contacts";
+@import "components/subscribe";
+@import "components/footer";
+/*----- components styles in project -----*/

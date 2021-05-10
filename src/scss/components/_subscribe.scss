@@ -1,0 +1,52 @@
+.subscribe{
+    min-height: 410px;
+    background-color: #f3f3f3;
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        line-height: 47px;
+        margin-bottom: 0;
+    }
+
+    &__description{
+        font-size: 22px;
+    }
+
+    &__title-section{
+        padding-top: 135px;
+        padding-bottom: 48px;
+    }
+
+    .form-subscribe{
+        margin-bottom: 114px;
+    }
+    @media (max-width: 768.98px) {
+        min-height: auto;
+
+        &__title-section{
+            padding-top: 50px;
+            padding-bottom: 48px;
+        }
+
+        .form-subscribe{
+            margin-bottom: 70px;
+        }
+    }
+    @media (max-width: 575.98px) {
+
+        &__inner{
+            min-height: 410px;
+            justify-content: space-evenly;
+        }
+
+        .form-subscribe{
+            margin-bottom: 0;
+        }
+    }
+}

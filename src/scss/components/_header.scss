@@ -1,0 +1,106 @@
+.header{
+    height: 100vh;
+    min-height: 800px;
+    background: url('../../img/main-bg2.jpg') no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+    &__inner{
+        max-width: 100%;
+        padding: 0 35px;
+    }
+
+    // logo
+    &__logo{
+        position: absolute;
+        top: 35px;
+        left:35px;
+    }
+
+    &__title-section{
+        margin:0px 93px 55px 95px;
+    }
+
+    &__title{
+        color: $base-color2;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+        padding-bottom: 12px;
+        margin-bottom: 0;
+    }
+
+    // description
+    &__description{
+        font-family: 'Yantramanav', sans-serif;
+        max-width: 593px;
+        margin: 0 auto;
+        font-size: 21px;
+        font-size: 20px;
+        text-align: center;
+        color: $base-color2;
+        letter-spacing: .2px;
+        font-weight: 300;
+    }
+
+    /*<------ @media queries header section ------>*/
+    @media (max-width: 1199.98px) {
+        height: auto;
+     }
+
+    @media (max-width: 991.98px) { 
+        min-height: 600px;
+    }
+
+    @media (max-width: 767.98px) { 
+       height: auto;
+
+        &__title{
+            font-size: 48px;
+        }
+
+        &__description{
+            max-width: 395px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 575.98px) { 
+        width: 100%;
+        
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-width: 100%;
+            min-height: 100vh;
+            max-width: auto;
+            padding: 0 25px;
+        }
+
+        &__logo{
+            display: block;
+            position: static;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+
+        &__title-section{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 100px;
+        }
+
+        &__title{
+            font-size: 40px;
+        }
+
+        &__description{
+            max-width: 100%;
+            font-size: 20px;
+        }
+     }  
+}

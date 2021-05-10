@@ -1,0 +1,161 @@
+.find-us{
+    background: $base-color2;
+
+    &__title{
+        padding-top: 95px;
+    }
+
+    .address{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 519px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+       
+        &__item{
+            width: calc(20% - 83px);
+            min-width: 128px;
+            min-height: 131px;
+            margin: 0 41px;
+            margin-bottom: 60px;  
+            font-family: 'Yantramanav', sans-serif;
+
+            &-title{
+                font-weight: 600;
+            }
+
+            &-info{
+                display: block;
+
+                &_phone{
+
+                    &-link{
+                        text-decoration: none;
+                        color: rgb(41, 43, 44);
+                        transition: all ease .5s;
+                        
+                        &:hover{
+                            transition: all ease .5s;
+                            color: #6ab885;
+                        }
+                    }
+                }
+            }
+
+            &-email{
+                &-link{
+                    text-decoration: none;
+                    color: #6ab885;
+                }
+            }
+        }
+    }
+
+    .contacts{
+        padding-bottom: 78px;
+
+        &__title{
+            font-size: 24px;
+            line-height: 38.4px;
+            padding-top: 29px;
+            margin-bottom: 16px;
+        }
+
+        .title-section_offset-bottom{
+            padding-bottom: 48px;
+            font-size: 18px;
+        }
+
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            max-width: 349px;
+            margin: 0 auto;
+            font-size: 18px;
+            font-family: 'Yantramanav', sans-serif;
+
+            a{
+                text-decoration: none;         
+            }
+
+            &-phone{
+                color: $base-color;
+            }
+
+            &-email{
+                color: #20ab50;
+            }
+        }
+    }
+
+    /*<------ @media queries find-us ------>*/
+    @media (max-width: 1096.98px) {
+        .address{
+
+            &__item{
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: calc(25% - 40px);
+                margin: 0 20px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__title{
+            padding-top: 25px;
+        }
+        .address{
+
+            &__item{
+                width: calc(33.333% - 40px);
+                margin: 0 20px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        
+        &__title{
+            padding-top: 0;
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+
+        &__title + p {
+            font-size: 16px;
+        }
+        
+        .address{
+            &__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: calc(50% - 40px);
+            }
+        }
+
+        .contacts{
+
+            &__title{
+                padding: 0;
+            }
+
+            padding-bottom:40px
+        }
+
+    }
+
+    @media (max-width: 384.98px) {
+         .address__item{
+             width: 100%;
+         }
+    }
+}

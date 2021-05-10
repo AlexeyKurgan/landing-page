@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    min-height: 40px;
+    background-color: #dcdcdc;
+    
+    &__inner{
+        min-height: 40px;
+        padding: 0 37px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__copyright{
+        color:$base-color2;
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 5px 0;
+        &__inner{
+           text-align: center;
+        }
+    }
+}
